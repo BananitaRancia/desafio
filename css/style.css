@@ -1,0 +1,545 @@
+/* Reseteo */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.header {
+    background-color: rgb(2, 2, 187);
+    /* background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), blue); */
+    background-image: linear-gradient(90deg, #00d4ff 0%, #1b1491 100%);
+
+}
+
+.header img {
+    width: 200px;
+    height: 75px;
+    padding: 5px 5px 5px;
+
+}
+
+.main {
+    max-width: 850px;
+    margin: 100px auto;
+
+}
+
+.titularNoticia {
+    display: inline-block;
+    max-width: 350px;
+    margin-right: 50px;
+}
+
+.albumBanda {
+    display: inline-block;
+}
+
+.albumBanda img {
+    max-width: 400px;
+}
+
+.primeraparte {
+    font-family: 'Calibri';
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+/* primera parte */
+
+.espacioentrelinea {
+    line-height: 20px;
+    text-align: justify;
+}
+
+.letraGrande {
+    font-family: 'Calibri';
+    font-size: 110%;
+    font-weight: bolder;
+}
+
+.negrita {
+    color: rgb(55, 196, 102);
+    background-color: rgba(0, 0, 0, 40%);
+    font-style: oblique;
+}
+
+.segundaparte {
+    font-family: 'Calibri';
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 20px;
+    text-align: justify;
+    color: white;
+}
+
+nav ul li a {
+    color: gray;
+}
+
+nav ul li {
+    color: gray;
+}
+
+/* Pagina tour */
+.main2 {
+    background-image: url(../img/fondo1.jpg);
+    background-size: cover;
+    font-family: 'Calibri';
+    max-width: auto;
+    margin: auto;
+    padding: 30px;
+    margin-top: 50px;
+    color: white;
+}
+
+.centrado {
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+
+.inline {
+    border: solid 15px black;
+    width: 600px;
+    height: 350px;
+}
+
+/* Imagen de fondo */
+body {
+    background-image: url(../img/fondo4.jpg);
+
+}
+
+/* Pagina Contacto - Formulario*/
+
+.form {
+    width: 20%;
+    background: rgba(72, 80, 192, 40%);
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    font-family: 'Calibri';
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.form h5 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.caja {
+    width: 55%;
+    background: rgb(224, 224, 224);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: 'Calibri';
+    font-size: 18px;
+    border-color: rgba(3, 3, 114, 0.938);
+}
+
+.cajatexto {
+    width: 55%;
+    background: rgb(224, 224, 224);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: 'Calibri';
+    font-size: 18px;
+    border-color: rgba(3, 3, 114, 0.938);
+}
+
+.cajacomentar {
+    width: 60%;
+    background-color: rgb(3, 3, 114);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: 'Calibri';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Flexbox */
+/* Header Flex */
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuflex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 30px;
+}
+
+/* Hover */
+.botonhover:hover {
+    background-color: rgb(187, 187, 187);
+    padding: auto;
+    transition: 1s;
+}
+
+.menuflex li {
+    list-style: none;
+    padding: 15px;
+    border: 2px solid rgb(42, 199, 219);
+    border-radius: 4px;
+    margin: 4px;
+    display: block;
+}
+
+
+.menuflex a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Footer Flexbox */
+footer {
+    width: 100%;
+    height: 100px;
+}
+
+footer ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+footer .footerflex {
+    display: flex;
+    justify-content: center;
+}
+
+.footerflex li a {
+    padding: 50px;
+}
+
+.footerflex a {
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.footerflex li:hover{
+    transform: scale(1.5);
+    transition: .5s;
+}
+
+/* Submenu header */
+.submenu {
+    position: absolute;
+    background: rgb(187, 187, 187);
+    width: 10%;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+
+}
+
+.submenu li:hover .submenu {
+    display: block;
+
+}
+
+.menuflex li a {
+    color: white;
+    padding: 4px;
+    display: block;
+    text-decoration: none;
+    min-width: 50px;
+}
+
+.menuflex li {
+    float: none;
+    text-align: center
+}
+
+.menuflex li a:hover {
+    color: black;
+}
+
+.menuflex li ol {
+    display: none;
+}
+
+.menuflex li:hover>ol {
+    display: block;
+}
+
+/* Grid pagina noticias */
+
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
+    grid-template-areas:
+        "navmenu headergrid headergrid headergrid"
+        "navmenu primeraseccion primeraseccion aside"
+        "navmenu segundaseccion segundaseccion aside"
+        "footergrid footergrid footergrid footergrid";
+}
+
+/* Navegacion */
+.navmenu {
+    grid-area: navmenu;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .navmenu menugrid {
+    width: 100%;
+
+} */
+
+.navmenu li {
+    list-style: none;
+    padding: 20px;
+    height: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.navmenu li:hover {
+    background-color: rgba(25, 67, 68, 50%);
+}
+
+.navmenu a {
+    color: white;
+    text-decoration: none;
+}
+
+.navmenu img {
+    width: 200px;
+}
+
+
+/* Header - Encabezado */
+.headergrid {
+    grid-area: headergrid;
+    text-align: center;
+    color: white;
+    height: 30vh;
+    padding-top: 30px;
+}
+
+.headergrid h3 {
+    font-family: 'Calibri';
+    font-size: 40px;
+}
+
+.headergrid p {
+    font-family: 'Calibri';
+    text-align: center;
+    font-size: 30px;
+    padding: 15px;
+}
+
+/* Seccion 1 */
+.primeraseccion {
+    grid-area: primeraseccion;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.primeraseccion div {
+    display: flex;
+    margin: 1rem 1rem;
+    padding: 50px;
+}
+
+.primeraseccion h4 {
+    font-family: 'Calibri';
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.primeraseccion p {
+    font-family: 'Calibri';
+    color: white;
+
+}
+
+.primeraseccion img {
+    width: 400px;
+    margin-left: 5rem;
+}
+
+/* Seccion 2 */
+.segundaseccion {
+    grid-area: segundaseccion;
+    display: flex;
+    flex-direction: column;
+}
+
+.segundaseccion h5 {
+    font-family: 'Calibri';
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.segundaseccion p {
+    font-family: 'Calibri';
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.segundaseccion ul {
+    font-family: 'Calibri';
+    color: white;
+    text-align: center;
+    margin: 15px;
+    list-style: none;
+}
+
+.aside {
+    grid-area: aside;
+    text-align: center;
+}
+
+.aside h6 {
+    font-size: 25px;
+}
+
+.aside ul {
+    list-style: none;
+    font-size: 20px;
+    padding: 15px;
+}
+
+/* Footer */
+.footergrid {
+    display: flex;
+    grid-area: footergrid;
+    flex-direction: column;
+    align-items: center;
+    height: 20vh;
+}
+
+.footergrid ul {
+    font-size: 30px;
+    color: white;
+    height: 20vh;
+    margin: 10px;
+
+}
+
+.footergrid li {
+    padding: 50px;
+
+}
+
+/* media */
+
+@media (max-width: 768px) {
+
+    .grilla {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "navmenu"
+            "headergrid"
+            "primeraseccion"
+            "segundaseccion"
+            "footergrid";
+    }
+
+    .navmenu {
+        grid-area: navmenu;
+        flex-direction: row;
+    }
+
+    .navmenu img {
+        flex-direction: column;
+    }
+
+    .navmenu ul {
+        display: flex;
+        width: 100%;
+
+
+    }
+
+    .headergrid {
+        grid-area: headergrid;
+
+    }
+
+    .primeraseccion {
+        grid-area: primeraseccion;
+        text-align: 100vh;
+    }
+
+    .segundaseccion {
+        grid-area: segundaseccion;
+
+    }
+
+    .footergrid {
+        grid-area: footergrid;
+
+    }
+
+    .aside {
+        display: none;
+    }
+
+}
+
+/* Pagina index media */
+
+@media (max-width: 425px) {
+    .indexresponsive {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "segundaparte"
+            "footerflex";
+    }
+
+    .header {
+        grid-area: header;
+        display: flex;
+
+    }
+
+    .header img {
+        display: none;
+    }
+
+    /* .main {
+    grid-area: main;
+
+}
+
+.segundaparte {
+    grid-area: segundaparte;
+} */
+
+}
