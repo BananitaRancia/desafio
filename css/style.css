@@ -466,16 +466,18 @@ footer .footerflex {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
-            "navmenu"
-            "headergrid"
-            "primeraseccion"
-            "segundaseccion"
-            "footergrid";
+            "navmenu navmenu"
+            "headergrid headergrid"
+            "primeraseccion primeraseccion "
+            "segundaseccion segundaseccion"
+            "footergrid footergrid";
     }
 
     .navmenu {
         grid-area: navmenu;
-        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+
     }
 
     .navmenu img {
@@ -524,27 +526,89 @@ footer .footerflex {
         grid-template-areas:
             "header"
             "main"
-            "segundaparte"
-            "footerflex";
+            "footer425"
+
+        ;
     }
 
-    .header {
-        grid-area: header;
+    .header nav {
         display: flex;
+        flex-direction: row;
 
     }
 
-    .header img {
+    .header nav ul {
+        display: flex;
+        font-size: 15px;
+        padding: 5px;
+        border-radius: 4px;
+        margin: 1px;
+    }
+
+    .header a {
+        max-width: 300px;
         display: none;
     }
 
-    /* .main {
-    grid-area: main;
+    .primeraparte {
+        grid-area: primeraparte;
+        text-align: center;
+
+    }
+
+
+    .segundaparte {
+        grid-area: segundaparte;
+
+    }
+
+    .footer425 {
+        grid-area: footer425;
+
+    }
+
+    .aside {
+        display: none;
+    }
 
 }
 
-.segundaparte {
-    grid-area: segundaparte;
-} */
+/* media tour */
+
+@media (max-width: 425px) {
+    .tourmedia {
+        grid-template-areas:
+            "header"
+            "imagentour"
+            "footertour";
+
+
+    }
+
+    .imagentour {
+        grid-area: imagentour;
+        display: flex;
+                
+    }
+
+    .imagentour section {
+        height: 450px;
+        
+    }
+
+    .imagentour p {
+        color: black;
+    }
+
+    .footertour{
+        grid-area: footertour;
+        display: flex;
+    }
+
+    .footertour ul{
+        justify-content: center;
+
+    }
+
 
 }
